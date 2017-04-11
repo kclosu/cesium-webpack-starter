@@ -19,5 +19,6 @@ gulp.task('buildWorkers', function(done) {
 
 sed -i -e 's|npm run requirejs --|./node_modules/.bin/gulp requirejs|g' gulpfile.js
 
+mkdir -p Build
 ./node_modules/.bin/gulp buildShaders
 ./node_modules/.bin/gulp buildWorkers
